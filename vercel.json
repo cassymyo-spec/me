@@ -35,5 +35,8 @@
       "src": "/media/(.*)",
       "dest": "/media/$1"
     }
-  ]
+  ],
+  "analytics": {
+    "enabled": true
+  }
 }
