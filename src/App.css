@@ -3,7 +3,7 @@
 :root {
   --bg:       #f7f8f5;
   --surface:  #ffffff;
-  --ink:      #0f1409;
+  --ink:      #000000;
   --ink-2:    #3d4434;
   --ink-3:    #6b7560;
   --green:    #2d6a4f;
@@ -26,6 +26,15 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* nav */
@@ -158,6 +167,8 @@ nav {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: background 0.2s;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-primary:hover { background: var(--ink); }
@@ -175,6 +186,8 @@ nav {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: all 0.2s;
+  background: transparent;
+  cursor: pointer;
 }
 
 .btn-outline:hover { background: var(--green); color: #fff; border-color: var(--green); }
@@ -258,6 +271,12 @@ nav {
 
 .contact-item a:hover { color: var(--green); }
 
+/* main container */
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
 /* sections */
 section { padding: 6rem 4rem; }
 
@@ -326,9 +345,36 @@ section { padding: 6rem 4rem; }
   color: var(--ink);
   margin-bottom: 0.75rem;
   font-style: italic;
+  text-align: left;
 }
 
-.exp-stack { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1rem; }
+.exp-points { 
+  list-style: none; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.45rem; 
+  margin-bottom: 1rem;
+}
+
+.exp-points li {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.65;
+  padding-left: 1.1rem;
+  position: relative;
+  font-family: var(--serif);
+  text-align: left;
+}
+
+.exp-points li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 10px;
+  width: 4px; height: 1px;
+  background: var(--green-3);
+}
+
+.exp-stack { display: flex; flex-wrap: wrap; gap: 5px; }
 
 .tag {
   font-family: var(--serif);
@@ -339,25 +385,6 @@ section { padding: 6rem 4rem; }
   border: 0.5px solid var(--border-g);
   font-weight: 400;
   text-transform: uppercase;
-}
-
-.exp-points { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; }
-
-.exp-points li {
-  font-size: 14px;
-  color: var(--ink-2);
-  line-height: 1.65;
-  padding-left: 1.1rem;
-  position: relative;
-  font-family: var(--serif);
-}
-
-.exp-points li::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 10px;
-  width: 4px; height: 1px;
-  background: var(--green-3);
 }
 
 /* projects */

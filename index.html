@@ -1,367 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Casper Moyo — Software Engineer</title>
-<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-
-<nav>
-  <a href="#" class="nav-logo">cm_</a>
-  <ul class="nav-links">
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#education">Education</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-left">
-    <p class="hero-tag"></p>
-    <h1 class="hero-name">Casper<br><em>Moyo</em></h1>
-    <p class="hero-title">Software Engineer</p>
-    <p class="hero-bio">
-      Building scalable enterprise and SaaS systems with deep specialisation in Django, ERP platforms, and regulatory integrations. Focused on backend engineering, system reliability, and solutions that solve real business problems.
-    </p>
-    <div class="hero-actions">
-      <a href="mailto:cassymyo@gmail.com" class="btn-primary">Get in touch →</a>
-      <a href="https://github.com/cassymyo-spec" target="_blank" class="btn-outline">GitHub ↗</a>
-      <button id="downloadCV" class="btn-outline">Download CV</button>
-    </div>
-  </div>
-
-  <div class="hero-right">
-    <div class="hero-stats">
-      <div class="stat-box">
-        <div class="stat-num">3+</div>
-        <div class="stat-label">Years building</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">2</div>
-        <div class="stat-label">Open source libs</div>
-      </div>
-    </div>
-
-    <div class="hero-contact">
-      <div class="contact-item">
-        <div class="contact-dot"></div>
-        <span>Harare, Zimbabwe</span>
-      </div>
-      <div class="contact-item">
-        <div class="contact-dot"></div>
-        <a href="tel:+263778587612">+263 778 587 612</a>
-      </div>
-      <div class="contact-item">
-        <div class="contact-dot"></div>
-        <a href="mailto:cassymyo@gmail.com">cassymyo@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <div class="contact-dot"></div>
-        <a href="https://linkedin.com/in/casper-moyo-017020284" target="_blank">linkedin.com/in/casper-moyo</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-header reveal">
-    <span class="section-num">01</span>
-    <h2 class="section-title">Work Experience</h2>
-  </div>
-
-  <div class="exp-grid">
-
-    <div class="exp-item reveal">
-      <div class="exp-meta">
-        <p class="exp-date">09/2025 — Present</p>
-        <p class="exp-company">Sigma366 App</p>
-        <p class="exp-location">Remote</p>
-      </div>
-      <div class="exp-content">
-        <h3 class="exp-role">Frontend Developer (Freelance)</h3>
-        <div class="exp-stack">
-          <span class="tag">Angular</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">HTML/CSS</span>
-          <span class="tag">RESTful APIs</span>
-        </div>
-        <ul class="exp-points">
-          <li>Developing responsive, modular web interfaces for a school management platform.</li>
-          <li>Implemented role-based dashboards for students, teachers, and administrators.</li>
-          <li>Integrated frontend with backend APIs for authentication and data management.</li>
-          <li>Focused on maintainable architecture, performance optimisation, and consistent UX.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp-item reveal">
-      <div class="exp-meta">
-        <p class="exp-date">01/2026 — 03/2026</p>
-        <p class="exp-company">Montclair Resort &amp; Conference</p>
-        <p class="exp-location">Harare, Zimbabwe</p>
-      </div>
-      <div class="exp-content">
-        <h3 class="exp-role">Software Engineer</h3>
-        <div class="exp-stack">
-          <span class="tag">IoT</span>
-          <span class="tag">Embedded Systems</span>
-        </div>
-        <ul class="exp-points">
-          <li>Developed remote IoT control system for turning borehole pump on/off from 2km distance, eliminating manual travel time.</li>
-          <li>Integrated temperature sensors to monitor pump operational status and prevent overheating damage.</li>
-          <li>Built secure web interface for real-time pump activation, scheduling, and temperature monitoring dashboard.</li>
-          <li>Implemented automated temperature alerts and shutdown protocols to protect pump from damage during operation.</li>
-          <li>Deployed reliable cellular communication ensuring instant pump control access from any location with internet connectivity.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp-item reveal">
-      <div class="exp-meta">
-        <p class="exp-date">01/2023 — 10/2025</p>
-        <p class="exp-company">Parsales Investments</p>
-        <p class="exp-location">Harare, Zimbabwe</p>
-      </div>
-      <div class="exp-content">
-        <h3 class="exp-role">Software Engineer</h3>
-        <div class="exp-stack">
-          <span class="tag">Django</span>
-          <span class="tag">DRF</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">Redis</span>
-          <span class="tag">Celery</span>
-          <span class="tag">Docker</span>
-          <span class="tag">HTMX</span>
-        </div>
-        <ul class="exp-points">
-          <li>Designed and led development of POSFlow ERP — a full Inventory, Finance, POS &amp; User Management platform.</li>
-          <li>Implemented ZIMRA fiscalisation integration, including fiscal device communication, receipt signing and validation.</li>
-          <li>Built secure, scalable RESTful APIs for mobile apps and third-party integrations.</li>
-          <li>Deployed systems across three operational branches ensuring high availability and data consistency.</li>
-          <li>Developed and rolled out a Restaurant Management System across multiple production environments.</li>
-          <li>Optimised background processing with Redis and Celery, significantly improving system responsiveness.</li>
-          <li>Managed Docker-based deployments, version control workflows, and mentored junior developers.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="exp-item reveal">
-      <div class="exp-meta">
-        <p class="exp-date">12/2023 — 05/2024</p>
-        <p class="exp-company">Heartview Care</p>
-        <p class="exp-location">Remote (UK)</p>
-      </div>
-      <div class="exp-content">
-        <h3 class="exp-role">Virtual Administrator</h3>
-        <div class="exp-stack">
-          <span class="tag">Django</span>
-          <span class="tag">DRF</span>
-          <span class="tag">React</span>
-          <span class="tag">Pandas</span>
-          <span class="tag">CSV Automation</span>
-        </div>
-        <ul class="exp-points">
-          <li>Automated staff shift and operational data processing, reducing report generation time by 75%.</li>
-          <li>Built internal automation tools using Django and Pandas for CSV data cleaning and report generation.</li>
-          <li>Improved reporting accuracy while eliminating repetitive manual tasks.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-header reveal">
-    <span class="section-num">02</span>
-    <h2 class="section-title">Projects</h2>
-  </div>
-
-  <div class="projects-grid">
-
-    <div class="project-card reveal">
-      <p class="project-num">1</p>
-      <h3 class="project-name">fiscguy</h3>
-      <p class="project-sub">Django ZIMRA Fiscalisation Library</p>
-      <p class="project-desc">A reusable Django library for ZIMRA fiscalisation, compliant with fiscal device and server specifications. Handles receipt signing, server communication, validation error codes, and compliance workflows. Designed to plug seamlessly into POS and ERP systems with clean abstractions.</p>
-      <div class="project-tags">
-        <span class="tag">Django</span>
-        <span class="tag">Python</span>
-        <span class="tag">ZIMRA API</span>
-        <span class="tag">Open Source</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <p class="project-num">Two</p>
-      <h3 class="project-name">POSFlow ERP</h3>
-      <p class="project-sub">Custom Enterprise Resource Planning Platform</p>
-      <p class="project-desc">A full-featured ERP built from the ground up with Inventory, Finance, POS, and User Management modules. Deployed across three operational branches with high-availability architecture. Integrates ZIMRA fiscalisation and exposes RESTful APIs for mobile and third-party systems.</p>
-      <div class="project-tags">
-        <span class="tag">Django</span>
-        <span class="tag">PostgreSQL</span>
-        <span class="tag">Redis</span>
-        <span class="tag">Docker</span>
-        <span class="tag">Celery</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <p class="project-num">3</p>
-      <h3 class="project-name">TenantSpace</h3>
-      <p class="project-sub">WhatsApp-First Property SaaS</p>
-      <p class="project-desc">A SaaS platform enabling property listings and searches directly via WhatsApp. Integrates Twilio and Llama 3 LLMs for natural language interactions. Targeted at Zimbabwe's WhatsApp-first market to reduce friction for property seekers.</p>
-      <div class="project-tags">
-        <span class="tag">Django</span>
-        <span class="tag">Twilio</span>
-        <span class="tag">LLM / Llama 3</span>
-        <span class="tag">WhatsApp API</span>
-        <span class="tag">SaaS</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <p class="project-num">4</p>
-      <h3 class="project-name">Remote IoT Pump Control</h3>
-      <p class="project-sub">Borehole Automation System</p>
-      <p class="project-desc">Designed and built a remote borehole pump IoT control system for Montclair Resort. Enables remote monitoring and control of water infrastructure, reducing manual intervention and improving operational efficiency at the property.</p>
-      <div class="project-tags">
-        <span class="tag">IoT</span>
-        <span class="tag">Embedded Systems</span>
-        <span class="tag">Automation</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-header reveal">
-    <span class="section-num">03</span>
-    <h2 class="section-title">Technical Skills</h2>
-  </div>
-
-  <div class="skills-grid">
-    <div class="skill-cat reveal">
-      <p class="skill-cat-name">Backend Development</p>
-      <ul class="skill-list">
-        <li>Python</li>
-        <li>Django &amp; DRF</li>
-        <li>Flask / FastAPI</li>
-        <li>Celery &amp; Redis</li>
-        <li>PostgreSQL</li>
-        <li>MySQL</li>
-        <li>RESTful APIs</li>
-      </ul>
-    </div>
-    <div class="skill-cat reveal">
-      <p class="skill-cat-name">Frontend Development</p>
-      <ul class="skill-list">
-        <li>JavaScript / TypeScript</li>
-        <li>React</li>
-        <li>React Native</li>
-        <li>Angular</li>
-        <li>HTML5 &amp; CSS3</li>
-        <li>HTMX</li>
-        <li>Responsive Design</li>
-      </ul>
-    </div>
-    <div class="skill-cat reveal">
-      <p class="skill-cat-name">DevOps &amp; Infrastructure</p>
-      <ul class="skill-list">
-        <li>Docker &amp; Containerization</li>
-        <li>Git &amp; Version Control</li>
-        <li>Linux Administration</li>
-        <li>Nginx &amp; Web Servers</li>
-        <li>CI/CD Pipelines</li>
-        <li>Cloud Services</li>
-        <li>System Monitoring</li>
-      </ul>
-    </div>
-    <div class="skill-cat reveal">
-      <p class="skill-cat-name">Data &amp; Analytics</p>
-      <ul class="skill-list">
-        <li>Pandas &amp; NumPy</li>
-        <li>Data Processing</li>
-        <li>CSV Automation</li>
-        <li>Report Generation</li>
-      </ul>
-    </div>
-    <div class="skill-cat reveal">
-      <p class="skill-cat-name">Integrations &amp; APIs</p>
-      <ul class="skill-list">
-        <li>Third-party API Integration</li>
-        <li>LLM Integration</li>
-        <li>Twilio &amp; WhatsApp API</li>
-        <li>Payment Gateways</li>
-        <li>OAuth &amp; Authentication</li>
-      </ul>
-    </div>
-    <div class="skill-cat reveal">
-      <p class="skill-cat-name">Domain Expertise</p>
-      <ul class="skill-list">
-        <li>Systems Engineering</li>
-        <li>ERP Systems</li>
-        <li>POS Systems</li>
-        <li>ZIMRA Fiscal Integration</li>
-        <li>IoT &amp; Embedded Systems</li>
-        <li>SaaS Architecture</li>
-        <li>Regulatory Compliance</li>
-        <li>Business Process Automation</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="section-header reveal">
-    <span class="section-num">04</span>
-    <h2 class="section-title">Education</h2>
-  </div>
-
-  <div class="edu-block reveal">
-    <div>
-      <p class="exp-date" style="margin-bottom:0.5rem;">Catholic University of Zimbabwe</p>
-      <p class="exp-location">Harare, Zimbabwe</p>
-    </div>
-    <div>
-      <h3 class="exp-role">Bachelor of Business Administration and Information Technology</h3>
-      <p style="font-size:14px;color:var(--ink-2);margin-top:0.75rem;line-height:1.75;font-family:var(--sans);font-weight:400;">
-        Combined programme covering core business disciplines alongside information systems, software development, and technology management. Provides the dual perspective that informs a practical approach to building software that solves real business problems.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p class="footer-text">© 2026 Casper Moyo — Harare, Zimbabwe</p>
-  <div class="footer-links">
-    <a href="mailto:cassymyo@gmail.com">Email</a>
-    <a href="https://linkedin.com/in/casper-moyo-017020284" target="_blank">LinkedIn</a>
-    <a href="https://github.com/cassymyo-spec" target="_blank">GitHub</a>
-  </div>
-</footer>
-
-<!-- Download Modal -->
-<div id="downloadModal" class="download-modal">
-  <div class="modal-content">
-    <div class="modal-icon">
-      <div class="spinner"></div>
-    </div>
-    <h3>Downloading CV...</h3>
-    <p>Please wait while we prepare your download.</p>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Casper Moyo - Software Engineer</title>
+    <meta name="description" content="Casper Moyo - Software Engineer specializing in Django, ERP systems, and regulatory integrations. Building scalable enterprise and SaaS solutions with 3+ years of experience." />
+    <meta name="keywords" content="Casper Moyo, Software Engineer, Django, ERP, POSFlow, ZIMRA, Python, React, TypeScript, Web Development, Zimbabwe, Harare" />
+    <meta name="author" content="Casper Moyo" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cassymyo-spec.github.io" />
+    <meta property="og:title" content="Casper Moyo - Software Engineer" />
+    <meta property="og:description" content="Software Engineer specializing in Django, ERP systems, and regulatory integrations. Building scalable enterprise and SaaS solutions." />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://cassymyo-spec.github.io" />
+    <meta property="twitter:title" content="Casper Moyo - Software Engineer" />
+    <meta property="twitter:description" content="Software Engineer specializing in Django, ERP systems, and regulatory integrations." />
+    <meta property="twitter:image" content="/og-image.jpg" />
+    
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://cassymyo-spec.github.io" />
+    <meta name="theme-color" content="#2d6a4f" />
+    <meta name="msapplication-TileColor" content="#2d6a4f" />
+    
+    <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+  </head>
+  <body>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Casper Moyo",
+      "jobTitle": "Software Engineer",
+      "description": "Software Engineer specializing in Django, ERP systems, and regulatory integrations. Building scalable enterprise and SaaS solutions.",
+      "url": "https://cassymyo-spec.github.io",
+      "email": "cassymyo@gmail.com",
+      "telephone": "+263778587612",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Harare",
+        "addressCountry": "Zimbabwe"
+      },
+      "sameAs": [
+        "https://github.com/cassymyo-spec",
+        "https://linkedin.com/in/casper-moyo-017020284"
+      ],
+      "knowsAbout": [
+        "Django", "Python", "React", "TypeScript", "ERP Systems", 
+        "ZIMRA Integration", "PostgreSQL", "Redis", "Docker", "IoT",
+        "Systems Engineering"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Independent Contractor"
+      }
+    }
+    </script>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
