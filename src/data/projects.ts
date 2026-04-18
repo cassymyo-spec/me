@@ -25,6 +25,14 @@ const projects: Project[] = [
     image: "/images/projects/tenantspace-placeholder.png"
   },
   {
+    num: "3",
+    name: "Haulage Truck Management System",
+    subtitle: "Fleet & Delivery Operations REST API",
+    description: "A production-grade REST API for managing truck fleets, drivers, and delivery jobs. Features JWT authentication with per-device session tracking, a policy layer enforcing business rules around truck and driver assignments, full audit logging on every operation, and paginated endpoints. Containerised with Docker and documented via Swagger UI.",
+    tags: ["Django REST Framework", "PostgreSQL", "JWT", "Docker", "Python"],
+    image: "/images/projects/haulage-placeholder.png"
+  },
+  {
     num: "4",
     name: "Remote IoT Pump Control",
     subtitle: "Borehole Automation System",
