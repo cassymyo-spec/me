@@ -5,6 +5,7 @@ interface Project {
   description: string;
   tags: string[];
   image?: string;
+  link?: string;
 }
 
 const projects: Project[] = [
@@ -39,6 +40,15 @@ const projects: Project[] = [
     description: "Designed and built a remote borehole pump IoT control system for Montclair Resort. Enables remote monitoring and control of water infrastructure, reducing manual intervention and improving operational efficiency at the property.",
     tags: ["IoT", "Embedded Systems", "Automation"],
     image: "/images/projects/iot-pump-placeholder.png"
+  },
+  {
+    num: "5",
+    name: "Afrerp",
+    subtitle: "Africa Enterprise Resource Platform",
+    description: "A multi-tenant, cloud-based ERP and POS platform built for African SMEs. Accounting is the core — every sale, payment, and stock movement automatically generates correct double-entry journal entries through an event-driven posting rules engine. Features ZIMRA fiscalisation with offline tolerance, Ecocash-native payments, branch management, inventory with weighted average cost valuation, purchase orders, sale returns, and a platform superadmin layer. Built to expand into WhatsApp, native mobile, and AI-powered business intelligence. Live at afrerp.co.zw.",
+    tags: ["Django", "PostgreSQL", "Docker", "Multi-Tenant SaaS", "ERP", "ZIMRA", "Python"],
+    image: "/images/projects/afrerp-placeholder.png",
+    link: "https://afrerp.co.zw"
   }
 ];
 
