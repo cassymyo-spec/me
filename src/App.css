@@ -502,6 +502,8 @@ section { padding: 6rem 4rem; }
   flex-direction: column;
   gap: 1px;
   background: var(--border);
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .talk-card {
@@ -568,10 +570,12 @@ section { padding: 6rem 4rem; }
 .talk-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
+
+.talk-link { margin-left: auto; }
 
 .talk-tags { display: flex; flex-wrap: wrap; gap: 5px; }
 
