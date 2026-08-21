@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
+import Nav from "../components/Nav";
 import projects from "../data/projects";
-import talks from "../data/talks";
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -22,15 +22,14 @@ export default function Home() {
 
   useEffect(() => {
     const handleSmoothScroll = (e: Event) => {
-      const target = e.target as HTMLElement;
-      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
-        e.preventDefault();
-        const href = target.getAttribute('href');
-        if (href) {
-          const scrollTarget = document.querySelector<Element>(href);
-          if (scrollTarget) {
-            scrollTarget.scrollIntoView({ behavior: 'smooth' });
-          }
+      const target = (e.target as HTMLElement).closest('a');
+      const href = target?.getAttribute('href');
+      if (href && href.includes('#')) {
+        const hash = '#' + href.split('#')[1];
+        const scrollTarget = document.querySelector<Element>(hash);
+        if (scrollTarget) {
+          e.preventDefault();
+          scrollTarget.scrollIntoView({ behavior: 'smooth' });
         }
       }
     };
@@ -64,16 +63,7 @@ export default function Home() {
   return (
     <>
       {/* NAVIGATION */}
-      <nav>
-        <a href="#home" className="nav-logo">CM</a>
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#talks">Talks</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-        </ul>
-      </nav>
+      <Nav />
 
       <div className="main-container">
         {/* HERO */}
@@ -123,41 +113,6 @@ export default function Home() {
                 {project.tags.map((tag, tagIndex) => (
                   <span key={tagIndex} className="tag">{tag}</span>
                 ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-    {/* TEDDY TALKS */}
-      <section id="talks">
-        <div className="section-header reveal">
-          <h2 className="section-title">Teddy Talks</h2>
-        </div>
-
-        <div className="talks-list">
-          {talks.map((talk, index) => (
-            <div key={index} className="talk-card reveal">
-              <div className="talk-num">{talk.num}</div>
-              <div className="talk-body">
-                <h3 className="talk-title">{talk.title}</h3>
-                <p className="talk-sub">{talk.subtitle}</p>
-                <p className="talk-desc">{talk.description}</p>
-                <ul className="talk-topics">
-                  {talk.topics.map((topic, topicIndex) => (
-                    <li key={topicIndex}>{topic}</li>
-                  ))}
-                </ul>
-                <div className="talk-footer">
-                  <div className="talk-tags">
-                    {talk.tags.map((tag, tagIndex) => (
-                      <span key={tagIndex} className="tag">{tag}</span>
-                    ))}
-                  </div>
-                  {talk.file && (
-                    <a href={talk.file} download className="talk-link">Download slides ↓</a>
-                  )}
-                </div>
               </div>
             </div>
           ))}

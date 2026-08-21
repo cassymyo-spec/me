@@ -479,23 +479,16 @@ section { padding: 6rem 4rem; }
 }
 
 .talk-card {
-  display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 2.5rem;
+  display: block;
   background: var(--surface);
   padding: 2.5rem;
   text-align: left;
-  transition: padding-left 0.25s;
+  text-decoration: none;
+  color: inherit;
+  transition: padding-left 0.25s, background 0.2s;
 }
 
-.talk-card:hover { padding-left: 3rem; }
-
-.talk-num {
-  font-family: var(--serif);
-  font-size: 11px;
-  color: var(--green-3);
-  font-weight: 400;
-}
+.talk-card:hover { padding-left: 3rem; background: #333333; }
 
 .talk-title {
   font-family: var(--serif);
@@ -568,6 +561,111 @@ section { padding: 6rem 4rem; }
 }
 
 .talk-link:hover { color: var(--green); }
+
+/* TEDDY TALKS — list page (standalone route) */
+#talks-page { background: var(--surface); min-height: 100vh; padding-top: 9rem; }
+
+/* TEDDY TALK — detail page */
+#talk-detail { background: var(--surface); min-height: 100vh; padding-top: 9rem; max-width: 860px; margin: 0 auto; }
+
+.talk-back {
+  display: inline-block;
+  font-family: var(--serif);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--green-2);
+  text-decoration: none;
+  margin-bottom: 3rem;
+  transition: color 0.2s;
+}
+
+.talk-back:hover { color: var(--green); }
+
+.talk-detail-header {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.talk-detail-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.talk-detail-header .talk-sub { margin-bottom: 1.25rem; }
+.talk-detail-header .talk-desc { max-width: 100%; margin-bottom: 1.5rem; }
+
+.talk-detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 6rem;
+}
+
+.talk-section-title {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: 1rem;
+}
+
+.talk-section-body {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.talk-section-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.talk-section-points li {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.7;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.talk-section-points li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 9px;
+  width: 4px; height: 1px;
+  background: var(--green-3);
+}
+
+.talk-code {
+  margin-top: 1.25rem;
+  background: var(--bg);
+  border: 0.5px solid var(--border);
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+}
+
+.talk-code code {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink-2);
+  line-height: 1.7;
+  white-space: pre;
+}
+
+.talk-takeaways {
+  padding-top: 2.5rem;
+  border-top: 0.5px solid var(--border);
+}
 
 /* SKILLS */
 #skills { background: var(--ink); color: var(--bg); }
@@ -741,7 +839,6 @@ footer {
   section { padding: 4rem 1.5rem; }
   .exp-item { grid-template-columns: 1fr; gap: 1rem; }
   .projects-grid { grid-template-columns: 1fr; }
-  .talk-card { grid-template-columns: 1fr; gap: 1rem; }
   .talk-card:hover { padding-left: 2.5rem; }
   .talk-topics { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }

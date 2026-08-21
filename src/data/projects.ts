@@ -18,13 +18,6 @@ const projects: Project[] = [
     image: "/images/projects/fiscguy.png"
   },
   {
-    num: "2",
-    name: "TenantSpace - (in progress)",
-    subtitle: "WhatsApp-First Property SaaS",
-    description: "A SaaS platform enabling property listings and searches directly via WhatsApp. Integrates Twilio and Llama 3 LLMs for natural language interactions. Targeted at Zimbabwe's WhatsApp-first market to reduce friction for property seekers.",
-    tags: ["Django", "Twilio", "LLM / Llama 3", "WhatsApp API", "SaaS"]
-  },
-  {
     num: "3",
     name: "Haulage Truck Management System",
     subtitle: "Fleet & Delivery Operations REST API",
